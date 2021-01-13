@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Open+Sans&display=swap');
+
+body {
+    margin: 0;
+    background: white;
+}
+
+header {
+    display: grid;
+    min-height: 30px;
+    grid-auto-flow: column;
+    background-image: linear-gradient(to bottom right, #000000, #ff0000);
+    grid-gap: 1.5em;
+    padding: 0 40px;
+
+    .headerLogo {
+        display: grid;
+        justify-content: start;
+        align-content: center;
+        font-family: 'Libre Barcode 39 Extended Text', cursive;
+        color: red;
+        width: 100px;
+        height: auto;
+
+        img {
+            image-rendering: smooth;
+            width: 100%;
+            height: auto;
+
+            &:hover {
+                transform: translateY(-5px);
+                transition: ease-in-out 1s;
+            }
+        }
+    }
+
+    #navbar {
+        display: grid;
+        justify-content: right;
+        align-content: center;
+        grid-auto-flow: column;
+        grid-gap: 1.5em;
+        font-family: 'Reem Kufi', sans-serif;
+
+        .searchBox {
+            font-family: 'Reem Kufi', sans-serif;
+            font-size: 14px;
+            color: black;
+            text-transform: capitalize;
+            border-radius: 5px;
+            border: none;
+            padding: 5px;
+            height: 15px;
+        }
+
+        .LanguageSelect {
+            label {
+                font-size: 14px;
+                padding-right: 5px;
+                color: white;
+            }
+
+            select {
+                font-family: 'Reem Kufi', sans-serif;
+                border-radius: 5px;
+                border: none;
+            }
+        }
+
+        .menuBtn1,
+        .menuBtn2 {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .menuBtn1:hover,
+        .menuBtn2:hover {
+            transform: translateY(-10px);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+    }
+}
+
+.subnavbar {
+    display: grid;
+    grid-auto-flow: column;
+    background-color: black;
+    padding: 0 40px;
+    grid-gap: 1.5em;
+
+
+    .navigationLinks {
+        display: grid;
+        padding: 0;
+        margin-bottom: 8px;
+        margin-top: 8px;
+        list-style-type: none;
+        align-content: center;
+        text-align: center;
+        grid-auto-flow: column;
+        grid-gap: 1.5em;
+        font-family: "Open Sans", sans-serif;
+
+
+
+        li {
+
+            a {
+                text-decoration: none;
+                font-family: 'Reem Kufi', sans-serif;
+                text-transform: uppercase;
+                color: white;
+                font-size: 14px;
+                font-weight: bold;
+
+                &:hover {
+                    transition: 0.3s;
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+.currentCampaignHero {
+    display: grid;
+    height: 600px;
+    grid-auto-flow: column;
+    background-image: url("./Pictures\ for\ Website/Pizza.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    grid-gap: 1.5em;
+
+    .buyNow {
+        position: absolute;
+        justify-content: center;
+        align-content: center;
+
+        .purchaseGame {
+            background-color: red;
+            cursor: pointer;
+            color: white;
+            width: 10rem;
+            height: 4rem;
+            font-family: 'Pacifico', cursive;
+            box-shadow: 2px 2px 2px #000;
+            text-shadow: 2px 2px 2px #000;
+            font-size: 25px;
+            border: none;
+            border-top-left-radius: 30%;
+            border-bottom-right-radius: 30%;
+
+            &:hover {
+                transition: 0.6s;
+                border-top-left-radius: 0;
+                border-bottom-right-radius: 0;
+                font-size: 30px;
+                width: 12rem;
+                height: 5rem;
+            }
+        }
+    }
+
+    .pizzeria-logo {
+        margin: 0 auto;
+        padding: 110px 0;
+
+        .pizza-logo {
+            max-width: 100%;
+
+            img {
+                width: 300px;
+                height: auto;
+
+                &:hover {
+                    transform: rotate(360deg);
+                    transition: ease-in-out 1s;
+                }
+            }
+        }
+    }
+}
+
+.moreAboutCyberpunk {
+    display: grid;
+    grid-auto-flow: row;
+    background-color: black;
+    padding: 20px 40px;
+    padding-bottom: 40px;
+    grid-gap: 1em;
+
+    .header {
+        h1 {
+            margin: 0;
+            color: white;
+            text-transform: capitalize;
+            text-align: left;
+            font-family: "Roboto Mono", monospace;
+        }
+    }
+
+    .paragraph {
+        p {
+            margin: 0;
+            color: white;
+            font-family: "Roboto Mono", monospace;
+        }
+    }
+}
+
+.secondHero {
+    display: grid;
+    min-height: 30px;
+    grid-auto-flow: column;
+    background-image: linear-gradient(to bottom right, #000000, #ff0000);
+    border-bottom: 4px solid black;
+    grid-gap: 1.5em;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    .firstImage,
+    .secondImage,
+    .thirdImage {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        max-width: 100%;
+
+        img {
+            height: 25em;
+            width: 100%;
+            object-fit: scale-down;
+
+            &:hover {
+                transition: ease-in-out 0.6s;
+                transform: translateY(-5px);
+                cursor: pointer;
+            }
+        }
+
+        p {
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            font-family: 'Pacifico';
+            text-shadow: 2px 2px 2px #000;
+            background-color: red;
+            cursor: pointer;
+            box-shadow: 0px 0px 12px #000;
+            text-shadow: 0px 0px 12px #000;
+            border: none;
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+
+            &:hover {
+                transition: 0.6s;
+                border-top-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+    }
+}
+
+.thirdHero {
+    display: grid;
+    min-height: 500px;
+    grid-auto-flow: column;
+    background-image: url("./Pictures\ for\ Website/Pizza.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-gap: 1.5em;
+    padding: 20px 40px;
+    box-shadow: -1px 4px 5px 2px rgba(209, 205, 209, 1);
+
+    .firstThirdImage,
+    .secondThirdImage {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        max-width: 100%;
+
+        img {
+            height: 25em;
+            width: 100%;
+            object-fit: scale-down;
+
+            &:hover {
+                transition: ease-in-out 0.6s;
+                transform: translateY(-5px);
+                cursor: pointer;
+            }
+        }
+
+        p {
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            font-family: 'Pacifico';
+            background-color: red;
+            border: 4px solid black;
+            cursor: pointer;
+
+            &:hover {
+                font-size: 30px;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+.fourthHero {
+    display: grid;
+    min-height: 30px;
+    grid-auto-flow: column;
+    background-color: black;
+    grid-gap: 1.5em;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    .shippingInformation,
+    .moreShippingInformation,
+    .safePay,
+    .news {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        max-width: 100%;
+        height: 45px;
+        padding: 5px 0;
+        padding-top: 10px;
+
+        p {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 30px;
+            color: white;
+            font-family: 'Reem Kufi', sans-serif;
+            cursor: default;
+
+            &:hover {
+                color: red;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+.fifthHero {
+    display: grid;
+    min-height: 30px;
+    grid-auto-flow: column;
+    background-image: linear-gradient(to bottom right, #ff0000, #0c0d0e);
+    grid-gap: 1.5em;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    .languageSelectionAndRegion {
+        list-style-type: none;
+        align-content: center;
+        text-align: right;
+        grid-auto-flow: column;
+        grid-gap: 1.5em;
+        padding: 0;
+        text-decoration: none;
+        font-family: 'Reem Kufi', sans-serif;
+        text-transform: uppercase;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+
+        label {
+            padding-right: 5px;
+        }
+
+        form {
+            select {
+                height: 30px;
+                font-family: 'Reem Kufi', sans-serif;
+                border-radius: 5px;
+                border: none;
+            }
+        }
+
+        .countrySelect {
+            padding-top: 10px;
+        }
+    }
+
+    .shoppingNavigationLinks,
+    .webPages,
+    .customerSupportNavigationLinks {
+        padding: 0;
+        margin-top: 0;
+        list-style-type: none;
+        align-content: center;
+        text-align: left;
+        grid-auto-flow: column;
+        grid-gap: 1.5em;
+
+        li {
+            :hover {
+                transition: 0.3s;
+                color: black;
+            }
+
+
+            a {
+                text-decoration: none;
+                font-family: 'Reem Kufi', sans-serif;
+                text-transform: uppercase;
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.footer {
+    display: grid;
+    min-height: 30px;
+    grid-auto-flow: column;
+    background-color: black;
+    grid-gap: 1.5em;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    p {
+        text-align: left;
+        text-transform: capitalize;
+        font-size: 11px;
+        cursor: default;
+        color: white;
+        font-family: 'Reem Kufi', sans-serif;
+    }
+}

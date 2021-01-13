@@ -1,0 +1,514 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alatsi&family=Open+Sans&display=swap");
+body {
+  margin: 0;
+  background: white;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  min-height: 30px;
+  grid-auto-flow: column;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#000000), to(#ff0000));
+  background-image: linear-gradient(to bottom right, #000000, #ff0000);
+  grid-gap: 1.5em;
+  padding: 0 40px;
+}
+
+header .headerLogo {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: 'Libre Barcode 39 Extended Text', cursive;
+  color: red;
+  width: 100px;
+  height: auto;
+}
+
+header .headerLogo img {
+  image-rendering: smooth;
+  width: 100%;
+  height: auto;
+}
+
+header .headerLogo img:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
+}
+
+header #navbar {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+header #navbar .searchBox {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 14px;
+  color: black;
+  text-transform: capitalize;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  height: 15px;
+}
+
+header #navbar .LanguageSelect label {
+  font-size: 14px;
+  padding-right: 5px;
+  color: white;
+}
+
+header #navbar .LanguageSelect select {
+  font-family: 'Reem Kufi', sans-serif;
+  border-radius: 5px;
+  border: none;
+}
+
+header #navbar .menuBtn1,
+header #navbar .menuBtn2 {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+header #navbar .menuBtn1:hover,
+header #navbar .menuBtn2:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.subnavbar {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  background-color: black;
+  padding: 0 40px;
+  grid-gap: 1.5em;
+}
+
+.subnavbar .navigationLinks {
+  display: -ms-grid;
+  display: grid;
+  padding: 0;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  list-style-type: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+  font-family: "Open Sans", sans-serif;
+}
+
+.subnavbar .navigationLinks li a {
+  text-decoration: none;
+  font-family: 'Reem Kufi', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.subnavbar .navigationLinks li a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: red;
+}
+
+.currentCampaignHero {
+  display: -ms-grid;
+  display: grid;
+  height: 600px;
+  grid-auto-flow: column;
+  background-image: url("./Pictures for Website/Pizza.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 40px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  grid-gap: 1.5em;
+}
+
+.currentCampaignHero .buyNow {
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.currentCampaignHero .buyNow .purchaseGame {
+  background-color: red;
+  cursor: pointer;
+  color: white;
+  width: 10rem;
+  height: 4rem;
+  font-family: 'Pacifico', cursive;
+  -webkit-box-shadow: 2px 2px 2px #000;
+          box-shadow: 2px 2px 2px #000;
+  text-shadow: 2px 2px 2px #000;
+  font-size: 25px;
+  border: none;
+  border-top-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+}
+
+.currentCampaignHero .buyNow .purchaseGame:hover {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  font-size: 30px;
+  width: 12rem;
+  height: 5rem;
+}
+
+.currentCampaignHero .pizzeria-logo {
+  margin: 0 auto;
+  padding: 110px 0;
+}
+
+.currentCampaignHero .pizzeria-logo .pizza-logo {
+  max-width: 100%;
+}
+
+.currentCampaignHero .pizzeria-logo .pizza-logo img {
+  width: 300px;
+  height: auto;
+}
+
+.currentCampaignHero .pizzeria-logo .pizza-logo img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
+}
+
+.moreAboutCyberpunk {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  background-color: black;
+  padding: 20px 40px;
+  padding-bottom: 40px;
+  grid-gap: 1em;
+}
+
+.moreAboutCyberpunk .header h1 {
+  margin: 0;
+  color: white;
+  text-transform: capitalize;
+  text-align: left;
+  font-family: "Roboto Mono", monospace;
+}
+
+.moreAboutCyberpunk .paragraph p {
+  margin: 0;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+}
+
+.secondHero {
+  display: -ms-grid;
+  display: grid;
+  min-height: 30px;
+  grid-auto-flow: column;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#000000), to(#ff0000));
+  background-image: linear-gradient(to bottom right, #000000, #ff0000);
+  border-bottom: 4px solid black;
+  grid-gap: 1.5em;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.secondHero .firstImage,
+.secondHero .secondImage,
+.secondHero .thirdImage {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  max-width: 100%;
+}
+
+.secondHero .firstImage img,
+.secondHero .secondImage img,
+.secondHero .thirdImage img {
+  height: 25em;
+  width: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.secondHero .firstImage img:hover,
+.secondHero .secondImage img:hover,
+.secondHero .thirdImage img:hover {
+  -webkit-transition: ease-in-out 0.6s;
+  transition: ease-in-out 0.6s;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.secondHero .firstImage p,
+.secondHero .secondImage p,
+.secondHero .thirdImage p {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  font-family: 'Pacifico';
+  text-shadow: 2px 2px 2px #000;
+  background-color: red;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 12px #000;
+          box-shadow: 0px 0px 12px #000;
+  text-shadow: 0px 0px 12px #000;
+  border: none;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.secondHero .firstImage p:hover,
+.secondHero .secondImage p:hover,
+.secondHero .thirdImage p:hover {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.thirdHero {
+  display: -ms-grid;
+  display: grid;
+  min-height: 500px;
+  grid-auto-flow: column;
+  background-image: url("./Pictures for Website/Pizza.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-gap: 1.5em;
+  padding: 20px 40px;
+  -webkit-box-shadow: -1px 4px 5px 2px #d1cdd1;
+          box-shadow: -1px 4px 5px 2px #d1cdd1;
+}
+
+.thirdHero .firstThirdImage,
+.thirdHero .secondThirdImage {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  max-width: 100%;
+}
+
+.thirdHero .firstThirdImage img,
+.thirdHero .secondThirdImage img {
+  height: 25em;
+  width: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.thirdHero .firstThirdImage img:hover,
+.thirdHero .secondThirdImage img:hover {
+  -webkit-transition: ease-in-out 0.6s;
+  transition: ease-in-out 0.6s;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.thirdHero .firstThirdImage p,
+.thirdHero .secondThirdImage p {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  font-family: 'Pacifico';
+  background-color: red;
+  border: 4px solid black;
+  cursor: pointer;
+}
+
+.thirdHero .firstThirdImage p:hover,
+.thirdHero .secondThirdImage p:hover {
+  font-size: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.fourthHero {
+  display: -ms-grid;
+  display: grid;
+  min-height: 30px;
+  grid-auto-flow: column;
+  background-color: black;
+  grid-gap: 1.5em;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.fourthHero .shippingInformation,
+.fourthHero .moreShippingInformation,
+.fourthHero .safePay,
+.fourthHero .news {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  max-width: 100%;
+  height: 45px;
+  padding: 5px 0;
+  padding-top: 10px;
+}
+
+.fourthHero .shippingInformation p,
+.fourthHero .moreShippingInformation p,
+.fourthHero .safePay p,
+.fourthHero .news p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: white;
+  font-family: 'Reem Kufi', sans-serif;
+  cursor: default;
+}
+
+.fourthHero .shippingInformation p:hover,
+.fourthHero .moreShippingInformation p:hover,
+.fourthHero .safePay p:hover,
+.fourthHero .news p:hover {
+  color: red;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.fifthHero {
+  display: -ms-grid;
+  display: grid;
+  min-height: 30px;
+  grid-auto-flow: column;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff0000), to(#0c0d0e));
+  background-image: linear-gradient(to bottom right, #ff0000, #0c0d0e);
+  grid-gap: 1.5em;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.fifthHero .languageSelectionAndRegion {
+  list-style-type: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: right;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Reem Kufi', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.fifthHero .languageSelectionAndRegion label {
+  padding-right: 5px;
+}
+
+.fifthHero .languageSelectionAndRegion form select {
+  height: 30px;
+  font-family: 'Reem Kufi', sans-serif;
+  border-radius: 5px;
+  border: none;
+}
+
+.fifthHero .languageSelectionAndRegion .countrySelect {
+  padding-top: 10px;
+}
+
+.fifthHero .shoppingNavigationLinks,
+.fifthHero .webPages,
+.fifthHero .customerSupportNavigationLinks {
+  padding: 0;
+  margin-top: 0;
+  list-style-type: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: left;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+}
+
+.fifthHero .shoppingNavigationLinks li :hover,
+.fifthHero .webPages li :hover,
+.fifthHero .customerSupportNavigationLinks li :hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: black;
+}
+
+.fifthHero .shoppingNavigationLinks li a,
+.fifthHero .webPages li a,
+.fifthHero .customerSupportNavigationLinks li a {
+  text-decoration: none;
+  font-family: 'Reem Kufi', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  min-height: 30px;
+  grid-auto-flow: column;
+  background-color: black;
+  grid-gap: 1.5em;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.footer p {
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 11px;
+  cursor: default;
+  color: white;
+  font-family: 'Reem Kufi', sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
